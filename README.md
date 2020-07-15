@@ -1,7 +1,4 @@
-# IEX Finance API
-
-[![Gem Version](https://badge.fury.io/rb/iex-ruby-client.svg)](https://badge.fury.io/rb/iex-ruby-client)
-[![Build Status](https://travis-ci.org/dblock/iex-ruby-client.svg?branch=master)](https://travis-ci.org/dblock/iex-ruby-client)
+# IEX Finance API (Fork)
 
 A Ruby client for the [The IEX Cloud API](https://iexcloud.io/docs/api/).
 
@@ -44,7 +41,7 @@ A Ruby client for the [The IEX Cloud API](https://iexcloud.io/docs/api/).
 Add to Gemfile.
 
 ```
-gem 'iex-ruby-client'
+gem 'iex-ruby-client', github: 'blackchestnut/iex-ruby-client'
 ```
 
 Run `bundle install`.
