@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module IEX
   module Endpoints
     module Price
