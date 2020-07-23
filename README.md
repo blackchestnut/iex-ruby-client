@@ -18,6 +18,7 @@ client.ref_data_iex_symbols
 ```
 
 #### Get Intraday Prices :new:
+https://iexcloud.io/docs/api/#intraday-prices
 ```ruby
 client = IEX::Api::Client.new
 prices = client.intraday_prices('AAPL')
