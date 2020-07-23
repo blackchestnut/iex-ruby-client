@@ -2,6 +2,29 @@
 
 A Ruby client for the [The IEX Cloud API](https://iexcloud.io/docs/api/).
 
+## New methods
+
+### IEX Symbols
+https://iexcloud.io/docs/api/#iex-symbols
+```ruby
+client = IEX::Api::Client.new
+client.ref_data_iex_symbols
+# => [{"symbol"=>"A"},
+# {"symbol"=>"AA"},
+# {"symbol"=>"AAAU"},
+# {"symbol"=>"AACG"},
+# {"symbol"=>"AACQU"},
+# ...
+```
+
+### Quote / Field
+https://iexcloud.io/docs/api/#quote
+```ruby
+client = IEX::Api::Client.new
+client.quote_field('AAPL', 'week52Low')
+# => 192.58
+```
+
 # Table of Contents
 
 - [Installation](#installation)
