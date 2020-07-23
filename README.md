@@ -2,9 +2,9 @@
 
 A Ruby client for the [The IEX Cloud API](https://iexcloud.io/docs/api/).
 
-## New methods
+### New API methods
 
-### IEX Symbols
+#### Get IEX Symbols :new:
 https://iexcloud.io/docs/api/#iex-symbols
 ```ruby
 client = IEX::Api::Client.new
@@ -17,7 +17,7 @@ client.ref_data_iex_symbols
 # ...
 ```
 
-### Quote / Field
+#### Get Quote / Field :new:
 https://iexcloud.io/docs/api/#quote
 ```ruby
 client = IEX::Api::Client.new
