@@ -9,6 +9,7 @@ module IEX
       include Endpoints::Dividends
       include Endpoints::Earnings
       include Endpoints::Income
+      include Endpoints::IntradayPrices
       include Endpoints::KeyStats
       include Endpoints::LargestTrades
       include Endpoints::Logo
@@ -16,8 +17,8 @@ module IEX
       include Endpoints::Ohlc
       include Endpoints::Price
       include Endpoints::Quote
-      include Endpoints::Sectors
       include Endpoints::RefData
+      include Endpoints::Sectors
       include Endpoints::StockMarket
 
       include Cloud::Connection
