@@ -17,6 +17,34 @@ client.ref_data_iex_symbols
 # ...
 ```
 
+#### Get Intraday Prices :new:
+```ruby
+client = IEX::Api::Client.new
+prices = client.intraday_prices('AAPL')
+# => [{"date"=>"2020-07-22",
+#  "minute"=>"09:30",
+#  "label"=>"09:30 AM",
+#  "high"=>388.54,
+#  "low"=>387.87,
+#  "open"=>387.99,
+#  "close"=>388.21,
+#  "average"=>388.177,
+#  "volume"=>1513,
+#  "notional"=>587311.78,
+#  "numberOfTrades"=>18},
+# {"date"=>"2020-07-22",
+#  "minute"=>"09:31",
+#  "label"=>"09:31 AM",
+#  "high"=>388.45,
+#  "low"=>388.21,
+#  "open"=>388.21,
+#  "close"=>388.45,
+# ....
+
+prices[0].time
+# => Wed, 22 Jul 2020 09:30:00 EDT -04:00
+```
+
 #### Get Quote / Field :new:
 https://iexcloud.io/docs/api/#quote
 ```ruby
