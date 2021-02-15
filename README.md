@@ -54,6 +54,22 @@ client.quote_field('AAPL', 'week52Low')
 # => 192.58
 ```
 
+#### Get Dividends (Basic) :up:
+https://iexcloud.io/docs/api/#dividends-basic
+```ruby
+client = IEX::Api::Client.new
+client.dividends 'CSCO', 'next'
+# => [{"amount"=>0.37,
+#  "currency"=>"USD",
+#  "declared_date"=>"2021-02-09",
+#  "description"=>"Ordinary Shares",
+#  "ex_date"=>"2021-04-05",
+#  "frequency"=>"quarterly",
+#  "payment_date"=>"2021-04-28",
+#  "record_date"=>"2021-04-06",
+#  "date"=>2021-04-05 03:00:00 +0300}]
+```
+
 # Table of Contents
 
 - [Installation](#installation)
