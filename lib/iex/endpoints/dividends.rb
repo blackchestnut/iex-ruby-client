@@ -3,6 +3,7 @@
 module IEX
   module Endpoints
     module Dividends
+      # https://iexcloud.io/docs/api/#dividends-basic
       def dividends symbol, range = nil, options = {}
         get(
           ['stock', symbol, 'dividends', range].compact.join('/'),
