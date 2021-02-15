@@ -64,6 +64,7 @@ client.dividends 'CSCO', 'next'
 #  "declared_date"=>"2021-02-09",
 #  "description"=>"Ordinary Shares",
 #  "ex_date"=>"2021-04-05",
+#  "flag"=>"Cash",
 #  "frequency"=>"quarterly",
 #  "payment_date"=>"2021-04-28",
 #  "record_date"=>"2021-04-06",
